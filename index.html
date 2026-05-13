@@ -130,12 +130,6 @@ hr.thin{border:none;border-top:1px solid var(--border-dark);margin:0}
 .hero-photo-inner{
   width:100%;height:100%;display:flex;align-items:center;justify-content:center;
 }
-.hero-ph-placeholder{
-  display:flex;flex-direction:column;align-items:center;gap:0.75rem;
-  color:rgba(184,137,58,0.4);
-}
-.hero-ph-placeholder svg{width:72px;height:72px}
-.hero-ph-placeholder p{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase}
 .hero-stats-row{
   display:grid;grid-template-columns:repeat(4,1fr);
   border-top:1px solid rgba(248,245,239,0.06);
@@ -226,7 +220,7 @@ hr.thin{border:none;border-top:1px solid var(--border-dark);margin:0}
 .tl-source{font-size:0.75rem;color:var(--muted)}
 
 /* ─── TESTIMONIALS ─── */
-.tst-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border-dark)}
+.tst-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;background:var(--border-dark)}
 .tst-card{background:var(--white);padding:3rem 2.5rem;position:relative}
 .tst-quote{font-family:var(--serif);font-size:5rem;color:var(--gold);opacity:0.15;position:absolute;top:1.5rem;left:2rem;line-height:1}
 .tst-text{font-family:var(--serif);font-size:1.05rem;color:var(--ink);line-height:1.7;font-style:italic;margin-bottom:1.5rem;position:relative;z-index:1}
@@ -404,7 +398,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
 </head>
 <body>
 
-<!-- ═══ NAV ═══ -->
 <nav id="nav">
   <div class="nav-logo" onclick="go('home')">Digital<em>Pandeji</em></div>
   <ul class="nav-center" id="nav-links">
@@ -418,12 +411,8 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
   </button>
 </nav>
 
-<!-- ══════════════════════════════════════════
-     HOME PAGE
-══════════════════════════════════════════ -->
 <div id="home" class="page active">
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
       <div class="hero-eyebrow">Fractional CMO · B2B SaaS · India · US · EU</div>
@@ -446,13 +435,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     <div class="hero-right">
       <div class="hero-photo">
         <div class="hero-photo-inner">
-          <div class="hero-ph-placeholder">
-            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="36" cy="26" r="16" stroke="#b8893a" stroke-width="1.5"/>
-              <path d="M8 68c0-15.46 12.54-28 28-28s28 12.54 28 28" stroke="#b8893a" stroke-width="1.5"/>
-            </svg>
-            <p style="color:rgba(184,137,58,0.4);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">Replace with headshot</p>
-          </div>
+          <img src="Divyaprasad.jpeg" alt="Divyaprasad Pande" style="width:100%;height:100%;object-fit:cover;">
         </div>
       </div>
       <div class="hero-stats-row">
@@ -464,7 +447,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </section>
 
-  <!-- TICKER -->
   <div class="ticker-wrap" aria-hidden="true">
     <div class="ticker-inner">
       <span class="ticker-item">Demand Generation <span>·</span></span>
@@ -490,7 +472,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- LOGOS -->
   <div class="logos-sec">
     <div class="logos-inner">
       <span class="logos-label">Experience across</span>
@@ -505,7 +486,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- RESULTS -->
   <div class="results-bg">
     <div class="wrap">
       <div class="sec">
@@ -554,7 +534,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- ICP QUALIFIER -->
   <div class="wrap" style="padding:5rem 0;">
     <div class="section-header rev" style="margin-bottom:2.5rem;">
       <div class="label">Right fit?</div>
@@ -587,7 +566,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- SERVICES OVERVIEW -->
   <div style="background:var(--white);">
     <div class="wrap sec">
       <div class="rev" style="margin-bottom:3rem;">
@@ -621,7 +599,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- PROCESS -->
   <div class="wrap sec-sm">
     <div class="rev" style="margin-bottom:3.5rem;">
       <div class="label">The process</div>
@@ -656,7 +633,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- THOUGHT LEADERSHIP -->
   <div style="background:var(--paper-warm);padding:5rem 0;">
     <div class="wrap">
       <div class="rev" style="margin-bottom:3rem;">
@@ -699,7 +675,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- TESTIMONIALS -->
   <div class="wrap sec">
     <div class="rev" style="margin-bottom:3rem;">
       <div class="label">Social proof</div>
@@ -708,20 +683,31 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     <div class="tst-grid rev rev-d1">
       <div class="tst-card">
         <div class="tst-quote">"</div>
-        <p class="tst-text">Add a LinkedIn recommendation here — ideally from your CEO, a co-founder you've worked with, or a senior peer who can speak directly to your commercial impact and leadership style. Request it via LinkedIn before launch.</p>
-        <div class="tst-name">Recommendation 1</div>
-        <div class="tst-role">Title, Company — request via LinkedIn</div>
+        <p class="tst-text">Divyaprasad built our marketing engine from scratch. His revenue-first approach directly contributed to our 3.5x ARR growth and played a massive role in our pre-Series A fundraise. He is exactly the kind of marketing leader founders need.</p>
+        <div class="tst-name">Kapil Khangaonkar</div>
+        <div class="tst-role">CEO & Founder, Clodura.AI</div>
       </div>
       <div class="tst-card">
         <div class="tst-quote">"</div>
-        <p class="tst-text">A second recommendation — from a different context if possible. A community peer from RevGenius or CMO Alliance, an investor, or someone you've advised informally adds diversity to the social proof portfolio.</p>
-        <div class="tst-name">Recommendation 2</div>
-        <div class="tst-role">Title, Company — request via LinkedIn</div>
+        <p class="tst-text">Divya is a rare breed of marketer who deeply understands both team leadership and complex attribution. He successfully managed a global team across 30+ brands and built the analytics backbone we relied on for executive decisions.</p>
+        <div class="tst-name">Mark Choudhary</div>
+        <div class="tst-role">CEO, Machintel Systems, Deck 7, and Media 7</div>
+      </div>
+      <div class="tst-card">
+        <div class="tst-quote">"</div>
+        <p class="tst-text">Under Divyaprasad's leadership, our SEO team became the highest revenue-contributing unit in the organization. His ability to turn organic traffic into a predictable pipeline is unmatched.</p>
+        <div class="tst-name">Rohit Bhisey</div>
+        <div class="tst-role">Ex. Marketing Director, Transparency Market Research</div>
+      </div>
+      <div class="tst-card">
+        <div class="tst-quote">"</div>
+        <p class="tst-text">Divyaprasad brought incredible structure and ROI-focus to our digital marketing efforts. He doesn't just run campaigns; he builds scalable systems that drive real business outcomes.</p>
+        <div class="tst-name">Raviraj Poojary & Uday Shetty</div>
+        <div class="tst-role">Founders, Wagons Learning</div>
       </div>
     </div>
   </div>
 
-  <!-- FAQ -->
   <div style="background:var(--white);">
     <div class="wrap sec">
       <div class="rev" style="margin-bottom:3rem;">
@@ -782,7 +768,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- CTA BAND -->
   <div class="cta-band">
     <div class="cta-band-inner rev">
       <div class="label" style="color:rgba(184,137,58,0.7);justify-content:center;margin-bottom:1.25rem;">Ready to move?</div>
@@ -792,7 +777,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
@@ -826,11 +810,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </footer>
 
-</div><!-- end home -->
-<!-- ══════════════════════════════════════════
-     SERVICES PAGE
-══════════════════════════════════════════ -->
-<div id="services" class="page">
+</div><div id="services" class="page">
 
   <div class="page-hero">
     <div class="page-hero-wrap">
@@ -842,7 +822,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
 
   <div class="wrap svc-detail-wrap">
 
-    <!-- Service 01 -->
     <div class="svc-detail rev">
       <div class="svc-detail-left">
         <div class="svc-detail-number">01</div>
@@ -874,7 +853,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
       </div>
     </div>
 
-    <!-- Service 02 -->
     <div class="svc-detail rev">
       <div class="svc-detail-left">
         <div class="svc-detail-number">02</div>
@@ -906,7 +884,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
       </div>
     </div>
 
-    <!-- Service 03 -->
     <div class="svc-detail rev">
       <div class="svc-detail-left">
         <div class="svc-detail-number">03</div>
@@ -940,7 +917,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
 
   </div>
 
-  <!-- CTA band -->
   <div class="cta-band">
     <div class="cta-band-inner rev">
       <div class="label" style="color:rgba(184,137,58,0.7);justify-content:center;margin-bottom:1.25rem;">Not sure which one?</div>
@@ -950,7 +926,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
@@ -964,11 +939,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     <div class="footer-bottom"><span class="footer-copy">© 2026 Divyaprasad Pande. All rights reserved.</span><div class="footer-li"><a href="#">Privacy</a></div></div>
   </footer>
 
-</div><!-- end services -->
-<!-- ══════════════════════════════════════════
-     ABOUT PAGE
-══════════════════════════════════════════ -->
-<div id="about" class="page">
+</div><div id="about" class="page">
 
   <div class="page-hero">
     <div class="page-hero-wrap">
@@ -982,13 +953,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     <div class="about-grid">
       <div class="about-left">
         <div class="about-photo">
-          <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:0.75rem;">
-            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:64px;height:64px;opacity:0.3;">
-              <circle cx="36" cy="26" r="16" stroke="#b8893a" stroke-width="1.5"/>
-              <path d="M8 68c0-15.46 12.54-28 28-28s28 12.54 28 28" stroke="#b8893a" stroke-width="1.5"/>
-            </svg>
-            <p style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(184,137,58,0.3);">Replace with headshot</p>
-          </div>
+          <img src="Divyaprasad.jpeg" alt="Divyaprasad Pande" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="about-communities">
           <span class="about-comm">CMO Alliance</span>
@@ -1010,7 +975,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
         <p>After a decade of building inside companies, I made a decision: the founders and CEOs who need CMO-level thinking most are exactly the ones who can't yet justify a full-time hire. I'm here to change that equation. As your Fractional CMO, I embed into your team — accountable to the same metrics your board cares about, without the full-time overhead.</p>
         <p>I work with <strong>B2B SaaS companies across India, US, and EU</strong> — Seed to Series B — who have product-market fit, are ready to build a real marketing engine, and want a partner who's been in the CMO seat before.</p>
 
-        <!-- Timeline -->
         <div class="timeline rev">
           <div class="tl-sec-head">Career timeline</div>
           <div class="tl-entry">
@@ -1061,7 +1025,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
           </div>
         </div>
 
-        <!-- Core Capabilities -->
         <div class="tl-sec-head" style="margin-top:3rem;">Core capabilities</div>
         <div class="caps-grid rev rev-d1">
           <div class="cap-card"><div class="cap-name">Growth Systems Architecture</div><div class="cap-desc">Design and operate end-to-end demand engines — PLG, outbound, inbound, ABM, and lifecycle — tied to pipeline and revenue, not vanity MQLs.</div></div>
@@ -1072,7 +1035,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
           <div class="cap-card"><div class="cap-name">Investor & Fundraise Marketing</div><div class="cap-desc">CAC/LTV/cohort dashboards, pipeline coverage narratives, and the GTM story that makes investors feel confident about where their capital goes.</div></div>
         </div>
 
-        <!-- Martech Stack -->
         <div class="tl-sec-head" style="margin-top:3rem;">Martech & tools</div>
         <table class="stack-table rev rev-d2">
           <thead>
@@ -1087,7 +1049,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
           </tbody>
         </table>
 
-        <!-- Education -->
         <div class="tl-sec-head" style="margin-top:3rem;">Education</div>
         <div class="tl-entry">
           <div class="tl-year">M.Tech</div>
@@ -1102,7 +1063,6 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     </div>
   </div>
 
-  <!-- CTA band -->
   <div class="cta-band">
     <div class="cta-band-inner rev">
       <div class="label" style="color:rgba(184,137,58,0.7);justify-content:center;margin-bottom:1.25rem;">Let's see if we're a fit</div>
@@ -1122,11 +1082,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     <div class="footer-bottom"><span class="footer-copy">© 2026 Divyaprasad Pande. All rights reserved.</span></div>
   </footer>
 
-</div><!-- end about -->
-<!-- ══════════════════════════════════════════
-     CONTACT PAGE
-══════════════════════════════════════════ -->
-<div id="contact" class="page">
+</div><div id="contact" class="page">
 
   <div class="page-hero">
     <div class="page-hero-wrap">
@@ -1166,8 +1122,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
         <div class="cal-box">
           <h3>Book directly in my calendar</h3>
           <p>Pick a time that works for you. The call is 30 minutes. I'll send a short pre-call brief so we make the most of it — no small talk, just useful time.</p>
-          <a href="https://calendly.com/divyaprasad-pande" target="_blank" class="btn btn-dark" style="font-size:0.78rem;">Open Calendly to schedule →</a>
-          <p class="cal-note">Update the link above with your actual Calendly URL once set up.</p>
+          <a href="https://meetings-na2.hubspot.com/divyaprasad-pande" target="_blank" class="btn btn-dark" style="font-size:0.78rem;">Open HubSpot to schedule →</a>
         </div>
 
         <div style="margin-top:2.5rem;">
@@ -1264,12 +1219,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,245,239,0.04);padding
     <div class="footer-bottom"><span class="footer-copy">© 2026 Divyaprasad Pande. All rights reserved.</span></div>
   </footer>
 
-</div><!-- end contact -->
-
-<!-- ══════════════════════════════════════════
-     JAVASCRIPT
-══════════════════════════════════════════ -->
-<script>
+</div><script>
 // ─── ROUTING ───
 function go(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
